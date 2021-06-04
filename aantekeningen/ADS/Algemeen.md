@@ -1,6 +1,7 @@
 # algemeen
 ## Wat is een algoritme
 Een algoritme is een recept voor het oplossen van een probleem, stap voor stap
+[[Tijd en geheugencomplexiteit]]
 ## Wat is een datastructuur
 Vaak wil je iets van data tijdelijk opslaan voor je calculaties. Hiervoor kan
 je datastructuren gebruiken; een structuur om je data op te slaan.

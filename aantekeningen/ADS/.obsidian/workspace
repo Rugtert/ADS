@@ -4,13 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "aab52d6250d1855a",
+        "id": "171c5d8d54c8ea4f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tijd en geheugencomplexiteit.md",
+            "file": "DataStructuren/Sets.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "cf84bdcf7dabf62a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Wat komt er op de toets.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tijd en geheugencomplexiteit.md",
+                "file": "DataStructuren/Sets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -76,6 +87,17 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8db4e85c789aa05f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
               }
             }
           }
@@ -86,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aab52d6250d1855a",
+  "active": "171c5d8d54c8ea4f",
   "lastOpenFiles": [
-    "Tijd en geheugencomplexiteit.md",
+    "DataStructuren/Sets.md",
     "Wat komt er op de toets.md",
-    "Zoek algoritme voorbeelden.md",
-    "Snelheid van algoritmen.md",
-    "Aantekeningen.md",
-    "Untitled.md",
-    "O Voorbeelden van algoritmen.md",
-    "O Voorbeelden.md",
     "Pasted image 20210604142739.png",
-    "O Vorbeelden.md"
+    "DataStructuren/Maps.md",
+    "DataStructuren/Untitled.md",
+    "Sorteren/Counting Sort.md",
+    "Sorteren/Selection Sort.md",
+    "Tijd en geheugencomplexiteit.md",
+    "Sorteren/Sorteren.md",
+    "Snelheid van algoritmen.md"
   ]
 }
