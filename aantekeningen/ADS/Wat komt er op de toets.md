@@ -17,9 +17,12 @@
 	1. [[Arrays]]
 4. HashSet, TreeSet, HashMap, TreeMap
 	1. [[Sets]]
-	2. 
+	2. [[Maps]]
 5. ArrayDeque, Priority Queue
+	1. [[Queues#ArrayDeque]]
+	2. [[Queues#PriorityQueue]]
 6. Generieke datatypen snappen
+	1. [[Generics]]
 7. Binaire zoekbomen snappen
 
    

@@ -29,3 +29,5 @@ Op deze manier is het toevoegen en verwijderen van elementen een stuk sneller en
 Wanneer je in een linkedlist met .iterator() werkt kan het zoeken naar een element om toe te voegen of te verwijderen O(1) zijn. Zo niet is het O(n).
 ### Arraylist en LinkedList vergeleken
 ![[Pasted image 20210604163339.png]]
+
+

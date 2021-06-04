@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "171c5d8d54c8ea4f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "DataStructuren/Sets.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "cf84bdcf7dabf62a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
+            "file": "WAAR BEN JE GEBLEVEN.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "d697bb0029d566ad",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
             "file": "Wat komt er op de toets.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataStructuren/Sets.md",
+                "file": "WAAR BEN JE GEBLEVEN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "171c5d8d54c8ea4f",
+  "active": "cf84bdcf7dabf62a",
   "lastOpenFiles": [
-    "DataStructuren/Sets.md",
+    "Untitled.md",
+    "Generics.md",
     "Wat komt er op de toets.md",
-    "Pasted image 20210604142739.png",
+    "DataStructuren/Queues.md",
+    "DataStructuren/Arrays.md",
+    "DataStructuren/Sets.md",
     "DataStructuren/Maps.md",
     "DataStructuren/Untitled.md",
-    "Sorteren/Counting Sort.md",
-    "Sorteren/Selection Sort.md",
-    "Tijd en geheugencomplexiteit.md",
-    "Sorteren/Sorteren.md",
-    "Snelheid van algoritmen.md"
+    "Pasted image 20210604142739.png",
+    "Sorteren/Counting Sort.md"
   ]
 }
