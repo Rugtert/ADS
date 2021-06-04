@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "53d9d1a3005eb8cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "aab52d6250d1855a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "O Voorbeelden.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ef74fee8eaceacb8",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed4613d953f81839",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f6c1ff0175588e4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5840ef47f6142284",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bdf8f13f05a74b52",
+    "type": "split",
+    "children": [
+      {
+        "id": "6dcdeea07bb85c76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3bf655e142905c1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "O Voorbeelden.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "aab52d6250d1855a",
+  "lastOpenFiles": [
+    "O Vorbeelden.md",
+    "Untitled.md",
+    "Aantekeningen.md",
+    "Pasted image 20210604140815.png",
+    "Zoek algoritme voorbeelden.md"
+  ]
+}
