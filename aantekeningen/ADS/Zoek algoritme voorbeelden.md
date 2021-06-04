@@ -1,4 +1,5 @@
 # Binary search
+Strings zoeken?  Gebruik string1.compareTo(string2)
 ```java 
 import java.util.ArrayList;  
   

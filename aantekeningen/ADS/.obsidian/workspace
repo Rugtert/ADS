@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "O Voorbeelden.md",
+            "file": "Tijd en geheugencomplexiteit.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "O Voorbeelden.md",
+                "file": "Tijd en geheugencomplexiteit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,15 @@
   },
   "active": "aab52d6250d1855a",
   "lastOpenFiles": [
-    "O Vorbeelden.md",
-    "Untitled.md",
+    "Tijd en geheugencomplexiteit.md",
+    "Wat komt er op de toets.md",
+    "Zoek algoritme voorbeelden.md",
+    "Snelheid van algoritmen.md",
     "Aantekeningen.md",
-    "Pasted image 20210604140815.png",
-    "Zoek algoritme voorbeelden.md"
+    "Untitled.md",
+    "O Voorbeelden van algoritmen.md",
+    "O Voorbeelden.md",
+    "Pasted image 20210604142739.png",
+    "O Vorbeelden.md"
   ]
 }
