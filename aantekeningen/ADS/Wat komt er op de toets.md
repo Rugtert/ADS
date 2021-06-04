@@ -24,6 +24,7 @@
 6. Generieke datatypen snappen
 	1. [[Generics]]
 7. Binaire zoekbomen snappen
+	1. [[Binaire Bomen]]
 
    
 De programeeropdracht gaat met datastructuren te maken hebben en is in dezelfde vorm als vorig jaar, maar dit keer met de tijdscomplexiteit zoals O(log⁡n) erbij gezet.

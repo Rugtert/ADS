@@ -9,18 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "WAAR BEN JE GEBLEVEN.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "d697bb0029d566ad",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Wat komt er op de toets.md",
+            "file": "DataStructuren/Datastructuren kort op een rijtje.md",
             "mode": "source"
           }
         }
@@ -79,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WAAR BEN JE GEBLEVEN.md",
+                "file": "DataStructuren/Datastructuren kort op een rijtje.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,15 +99,15 @@
   },
   "active": "cf84bdcf7dabf62a",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Generics.md",
-    "Wat komt er op de toets.md",
-    "DataStructuren/Queues.md",
-    "DataStructuren/Arrays.md",
-    "DataStructuren/Sets.md",
-    "DataStructuren/Maps.md",
     "DataStructuren/Untitled.md",
-    "Pasted image 20210604142739.png",
-    "Sorteren/Counting Sort.md"
+    "Sorteren/Untitled.md",
+    "Tijd en geheugencomplexiteit.md",
+    "Wat komt er op de toets.md",
+    "Snelheid van algoritmen.md",
+    "Generics.md",
+    "Binaire Bomen.md",
+    "Algemeen.md",
+    "Pasted image 20210604214719.png",
+    "Zoek algoritme voorbeelden.md"
   ]
 }

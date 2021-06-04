@@ -2,7 +2,6 @@
 Je kunt generics op twee plekken gebruiken
 1. Generic methods en wildcards
 2. Generic classes
-3. 
 ## Generic Methods
 Generic methods zijn handig om algemenere objecten mee te geven aan functies.
 Een generic method gebruikt een algemene \<T> om een bepaalde Type aan te duiden zoals Strings, integers of classes.
@@ -39,4 +38,22 @@ public void print(Object param)
     }
 
 
+```
+## Generic Classes
+Bijvoorbeeld de ArrayList\<E>. Een class waarin je generics mee kan geven.  Een generic kan elk object zijn of een object dat een subclass van een interface of abstract object is. 
+Bijvoorbeeld:
+```java
+abstract class SquareThing{
+    public void openit(){
+        
+    }
+}
+public class box<T extends SquareThing> {
+    // T stands for "Type"
+    private T item;
+
+    public void set(T item) { this.item = item; }
+    public T get() { return item; }
+    public void openthebox() {item.openit();}
+}
 ```

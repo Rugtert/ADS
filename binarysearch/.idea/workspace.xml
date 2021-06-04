@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1e56076-c646-4edf-9fad-171268726256" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/.obsidian/config" beforeDir="false" afterPath="$PROJECT_DIR$/../aantekeningen/ADS/.obsidian/config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/../aantekeningen/ADS/.obsidian/graph.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/.obsidian/workspace" beforeDir="false" afterPath="$PROJECT_DIR$/../aantekeningen/ADS/.obsidian/workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/Aantekeningen.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/O Voorbeelden van algoritmen per O notatie.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/Snelheid van algoritmen.md" beforeDir="false" afterPath="$PROJECT_DIR$/../aantekeningen/ADS/Snelheid van algoritmen.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/Tijd en geheugencomplexiteit.md" beforeDir="false" afterPath="$PROJECT_DIR$/../aantekeningen/ADS/Tijd en geheugencomplexiteit.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/Wat komt er op de toets.md" beforeDir="false" afterPath="$PROJECT_DIR$/../aantekeningen/ADS/Wat komt er op de toets.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/Generics.md" beforeDir="false" afterPath="$PROJECT_DIR$/../aantekeningen/ADS/Generics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aantekeningen/ADS/Voorbeelden/O Voorbeelden van algoritmen per O notatie.md" beforeDir="false" afterPath="$PROJECT_DIR$/../aantekeningen/ADS/Voorbeelden/O Voorbeelden van algoritmen per O notatie.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +26,10 @@
   </component>
   <component name="ProjectId" id="1tTugv1rd6WXACJfJFfjmLrq6jb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -39,18 +37,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -62,11 +49,13 @@
       <option name="presentableId" value="Default" />
       <updated>1622805514039</updated>
       <workItem from="1622805519568" duration="4757000" />
+      <workItem from="1622832256637" duration="813000" />
+      <workItem from="1622833451468" duration="702000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -78,5 +67,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

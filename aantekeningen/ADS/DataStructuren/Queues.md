@@ -19,7 +19,7 @@ Een ArrayDeque werkt achter de schermen met een array en twee integeres.
 
 Als er een element aan de queue wordt toegevoegd of verwijderd worden deze indices ook geupdate. Als je bijvoorbeeld het eerste element weghaald dan schuift de headindex één naar rechts. Als je een element achteraan toevoegd dan schuift de tail index één naar rechts.
 
-Je kan in plaats van een ArrayDeque een LinkedList gebruiken met dezelfde worst-case running times. Maar in de praktijk is een ArrayDeque sneller en gebruikt minder memory.
+Je kan in plaats van een ArrayDeque een [[Arrays#LinkedList]] gebruiken met dezelfde worst-case running times. Maar in de praktijk is een ArrayDeque sneller en gebruikt minder memory.
 ### Example code
 #### FIFO
 ```java

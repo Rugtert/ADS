@@ -60,3 +60,65 @@ public int runBinarySearchIteratively(
     return index;
 }
 ```
+**O(1):**
+
+```
+function O_1(i) {
+    // console.log(i);
+    return 1
+}
+```
+
+**O(n):**
+
+```
+function O_N(n) {
+    count = 0;
+    for (i = 0; i < n; i++) {
+        // console.log(i);
+        count++;
+    }
+    return count
+}
+```
+
+**O(n²):**
+
+```
+function O_N2(n) {
+    count = 0;
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            // console.log(i, j);
+            count++;
+        }
+    }
+    return count
+}
+```
+
+**O(Log\_2(n)):**
+
+```
+function O_LOG_2(n) {
+    count = 0;
+    for (var i = 1; i < n; i = i * 2) {
+
+        count++;
+    }
+    return count
+}
+```
+
+**O(Sqrt(n)):**
+
+```
+function O_SQRT(n) {
+    count = 0;
+    for (var i = 1; i * i < n; i++) {
+        // console.log(i);
+        count++;
+    }
+    return count
+}
+```
