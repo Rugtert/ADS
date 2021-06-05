@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1e56076-c646-4edf-9fad-171268726256" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../aantekeningen/ADS/.obsidian/workspace" beforeDir="false" afterPath="$PROJECT_DIR$/../../aantekeningen/ADS/.obsidian/workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aantekeningen/ADS/DataStructuren/Datastructuren kort op een rijtje.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../aantekeningen/ADS/DataStructuren/Datastructuren kort op een rijtje.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aantekeningen/ADS/Sorteren/Sorteren.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../aantekeningen/ADS/Sorteren/Sorteren.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aantekeningen/ADS/Wat komt er op de toets.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../aantekeningen/ADS/Wat komt er op de toets.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/.idea/runConfigurations/binarysearch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/binarysearch.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/hs_err_pid13600.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/out/production/binarysearch/binarysearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/src/binarysearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/src/box.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../binarysearch/src/hash.java" beforeDir="false" />
-    </list>
+    <list default="true" id="b1e56076-c646-4edf-9fad-171268726256" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +17,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/hash.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/box.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/binarysearch.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../antwoordcode/ads_week1_antwoorden/PrimeFactorization.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1tTugv1rd6WXACJfJFfjmLrq6jb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,6 +33,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../antwoordcode/ads_week2_antwoorden" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -63,7 +53,8 @@
       <workItem from="1622832256637" duration="813000" />
       <workItem from="1622833451468" duration="702000" />
       <workItem from="1622888007818" duration="297000" />
-      <workItem from="1622888711598" duration="13000" />
+      <workItem from="1622888711598" duration="60000" />
+      <workItem from="1622888784340" duration="445000" />
     </task>
     <servers />
   </component>
