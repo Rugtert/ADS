@@ -9,7 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DataStructuren/Datastructuren kort op een rijtje.md",
+            "file": "DataStructuren/Arrays.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "6cbf45bad2b83292",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Wat komt er op de toets.md",
             "mode": "source"
           }
         }
@@ -68,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataStructuren/Datastructuren kort op een rijtje.md",
+                "file": "DataStructuren/Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +110,15 @@
   },
   "active": "cf84bdcf7dabf62a",
   "lastOpenFiles": [
+    "DataStructuren/Arrays.md",
+    "Sorteren/Sorteren.md",
+    "Wat komt er op de toets.md",
+    "DataStructuren/Datastructuren kort op een rijtje.md",
+    "Snelheid van algoritmen.md",
+    "DataStructuren/Maps.md",
+    "Tijd en geheugencomplexiteit.md",
     "DataStructuren/Untitled.md",
     "Sorteren/Untitled.md",
-    "Tijd en geheugencomplexiteit.md",
-    "Wat komt er op de toets.md",
-    "Snelheid van algoritmen.md",
-    "Generics.md",
-    "Binaire Bomen.md",
-    "Algemeen.md",
-    "Pasted image 20210604214719.png",
-    "Zoek algoritme voorbeelden.md"
+    "Generics.md"
   ]
 }

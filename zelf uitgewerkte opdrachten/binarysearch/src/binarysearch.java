@@ -11,7 +11,7 @@ public class binarysearch {
             arrayinput.add(i);
         }
 
-        int resultarray = search(arrayinput, bier);
+        int resultarray = BinarySearch(arrayinput, bier);
         if (resultarray > -1) {
             System.out.println("found element at: " + resultarray);
         } else {
@@ -20,7 +20,7 @@ public class binarysearch {
 
         //List version
         int[] listinput = {18, 19, 25, 30, 44, 44, 72, 93, 100, 150, 230, 330, 532, 705, 821, 999, 1000};
-        int resultlist = search(listinput, bier);
+        int resultlist = BinarySearch(listinput, bier);
         if (resultlist > -1) {
             System.out.println("found element at: " + resultlist);
         } else {
@@ -34,7 +34,7 @@ public class binarysearch {
 
     }
 
-    public static int search(ArrayList<Integer> input, int bier) {
+    public static int BinarySearch(ArrayList<Integer> input, int bier) {
         int low = 0;
         int high = input.size();
 
@@ -57,7 +57,7 @@ public class binarysearch {
         return -1;
     }
 
-    public static int search(int[] input, int bier) {
+    public static int BinarySearch(int[] input, int bier) {
 
         int low = 0;
         int high = input.length;

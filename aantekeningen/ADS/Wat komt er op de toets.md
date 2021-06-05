@@ -11,16 +11,20 @@
 		1. [[Tijd en geheugencomplexiteit#Wat betekend de big-O notatie]]	
 	3. Je kan verschillende snelheden vergelijken
 		1. [[Snelheid van algoritmen]]
+		2. [[Datastructuren kort op een rijtje#O notaties van operaties op datastructuren]]
 2. Het snappen van de zoek- en sorteeralgoritmes
 	1. [[Sorteren]]
 3. Arrays, ArrayLists, Linked Lists
 	1. [[Arrays]]
+	2. [[Datastructuren kort op een rijtje]]
 4. HashSet, TreeSet, HashMap, TreeMap
 	1. [[Sets]]
 	2. [[Maps]]
+	3. [[Datastructuren kort op een rijtje]]
 5. ArrayDeque, Priority Queue
 	1. [[Queues#ArrayDeque]]
 	2. [[Queues#PriorityQueue]]
+	3. [[Datastructuren kort op een rijtje]]
 6. Generieke datatypen snappen
 	1. [[Generics]]
 7. Binaire zoekbomen snappen
