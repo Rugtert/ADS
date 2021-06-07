@@ -60,6 +60,19 @@ public int runBinarySearchIteratively(
     return index;
 }
 ```
+## O(n log n)
+
+```
+int n = 100
+for(int i = 0; i < n; i++) //this loop is executed n times, so O(n)
+{
+    for(int j = n; j > 0; j/=2) //this loop is executed O(log n) times
+    {
+
+    }
+}
+```
+
 **O(1):**
 
 ```

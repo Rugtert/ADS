@@ -22,9 +22,10 @@ Omdat het een klasse in plaats van een primitieve is moet je het aanroepen met f
 ![[Pasted image 20210604161930.png]]
 
 ## LinkedList
-In plaats van alle elementen achter elkaar te zetten zoals bij een arraylist bewaart een linkedlist een referentie naar het volgende object.
+In plaats van alle elementen achter elkaar te zetten zoals bij een arraylist bewaart een linkedlist een referentie naar het volgende object. Hier door kun je elementen invoegen of verwijderen door enkel referenties aan te passen op de juiste plek.
 
 Op deze manier is het toevoegen en verwijderen van elementen een stuk sneller en het heeft een dynamische lengte.
+![[Pasted image 20210607163603.png]]
 ![[Pasted image 20210604163215.png]]
 Wanneer je in een linkedlist met .iterator() werkt kan het zoeken naar een element om toe te voegen of te verwijderen O(1) zijn. Zo niet is het O(n).
 ### Arraylist en LinkedList vergeleken
