@@ -83,23 +83,9 @@ public class VogelbekdierSorting {
             min = vogelbekdieren[i];
             for (int j = i; j < vogelbekdieren.length; j++) {
                 if (vogelbekdieren[j].lengte < min.lengte){
-                    
-                    System.out.println(vogelbekdieren[i].lengte);
-                    System.out.println("-----------------------");
-                    System.out.println(vogelbekdieren[j].lengte);
-                    System.out.println("-----------------------");
-                    System.out.println("-----------------------");
-                    
                     min = vogelbekdieren[j];
                     vogelbekdieren[j] = vogelbekdieren[i];
                     vogelbekdieren[i] = min;
-                    
-                    System.out.println(vogelbekdieren[i].lengte);
-                    System.out.println("-----------------------");
-                    System.out.println(vogelbekdieren[j].lengte);
-                    System.out.println("-----------------------");
-                    System.out.println("-----------------------");
-                    System.out.println("-----------------------");
                 }
             }
         }
@@ -118,7 +104,6 @@ public class VogelbekdierSorting {
                     min = vogelbekdieren[j];
                     vogelbekdieren[j] = vogelbekdieren[i];
                     vogelbekdieren[i] = min;
-
                 }
             }
         }
