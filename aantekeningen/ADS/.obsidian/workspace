@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "6cbf45bad2b83292",
+        "id": "324c4049e944bdc6",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Sorteren/Selection Sort.md",
+            "file": "CompareTo, Equals.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sorteren/Selection Sort.md",
+                "file": "CompareTo, Equals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,17 +97,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6cbf45bad2b83292",
+  "active": "324c4049e944bdc6",
   "lastOpenFiles": [
-    "Sorteren/Selection Sort.md",
-    "Sorteren/Counting Sort.md",
-    "Sorteren/Merge Sort.md",
-    "Sorteren/Tree Sort.md",
-    "Voorbeelden/LinkedList Code.md",
+    "CompareTo, Equals.md",
     "Algemeen.md",
-    "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
+    "Voorbeelden/Voorbeeld HashSet.md",
     "Wat komt er op de toets.md",
-    "DataStructuren/Arrays.md",
-    "Voorbeelden/Untitled.md"
+    "Tijd en geheugencomplexiteit.md",
+    "Generics.md",
+    "Binaire Bomen.md",
+    "DataStructuren/Sets.md",
+    "Sorteren/Selection Sort.md",
+    "Sorteren/Counting Sort.md"
   ]
 }

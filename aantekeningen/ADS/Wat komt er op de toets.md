@@ -14,6 +14,8 @@
 		2. [[Datastructuren kort op een rijtje#O notaties van operaties op datastructuren]]
 2. Het snappen van de zoek- en sorteeralgoritmes
 	1. [[Sorteren]]
+		1. [[Sorteervoorbeelden]]
+		2. [[Zoek algoritme voorbeelden]]
 3. Arrays, ArrayLists, Linked Lists
 	1. [[Arrays]]
 	2. [[Datastructuren kort op een rijtje]]
