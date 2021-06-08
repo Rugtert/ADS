@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "datast",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,11 +48,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bdf8f13f05a74b52",
@@ -100,6 +102,7 @@
   "active": "aa962557fd21dcd9",
   "lastOpenFiles": [
     "DataStructuren/Queues.md",
+    "Wat komt er op de toets.md",
     "DataStructuren/Maps.md",
     "Snelheid van algoritmen.md",
     "Voorbeelden/Zoek algoritme voorbeelden.md",
@@ -107,7 +110,6 @@
     "Tijd en geheugencomplexiteit.md",
     "Binaire Bomen.md",
     "CompareTo, Equals.md",
-    "Generics.md",
-    "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md"
+    "Generics.md"
   ]
 }

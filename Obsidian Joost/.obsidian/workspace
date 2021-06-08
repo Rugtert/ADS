@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TreeMap.md",
-            "mode": "preview"
+            "file": "Notes uit het boek Algoritmen en datastructuren.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TreeMap.md",
+                "file": "Notes uit het boek Algoritmen en datastructuren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,8 @@
   },
   "active": "ce572f49da8cff16",
   "lastOpenFiles": [
+    "Notes uit het boek Algoritmen en datastructuren.md",
+    "ArrayList.md",
     "TreeMap.md",
     "Set.md",
     "TreeMap-Joost’s eigen macbook.md"
