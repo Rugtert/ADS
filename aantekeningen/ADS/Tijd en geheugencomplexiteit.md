@@ -11,6 +11,7 @@ We zijn vaak alleen geïntereseerd in ***de hoogste macht van n***, omdat voor e
 ### Big-O notatie in de praktijk
 ![[Pasted image 20210604153105.png]]
 #### Wat betekend de big-O notatie?
+De Big-O notatie wordt gebruikt om de tijd- en/of geheugencomplexiteitsgraad van algoritment aan te duiden. 
 > Als inputverzameling n groter wordt, dan duurt het runnen van een O(n2) algoritme n2 keer zo lang. 
 
 

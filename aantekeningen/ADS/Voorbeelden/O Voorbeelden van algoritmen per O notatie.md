@@ -62,7 +62,7 @@ public int runBinarySearchIteratively(
 ```
 ## O(n log n)
 
-```
+```java
 int n = 100
 for(int i = 0; i < n; i++) //this loop is executed n times, so O(n)
 {
@@ -75,7 +75,7 @@ for(int i = 0; i < n; i++) //this loop is executed n times, so O(n)
 
 **O(1):**
 
-```
+```java
 function O_1(i) {
     // console.log(i);
     return 1
@@ -84,7 +84,7 @@ function O_1(i) {
 
 **O(n):**
 
-```
+```java
 function O_N(n) {
     count = 0;
     for (i = 0; i < n; i++) {
@@ -97,7 +97,7 @@ function O_N(n) {
 
 **O(n²):**
 
-```
+```java
 function O_N2(n) {
     count = 0;
     for (i = 0; i < n; i++) {
@@ -112,7 +112,7 @@ function O_N2(n) {
 
 **O(Log\_2(n)):**
 
-```
+```java
 function O_LOG_2(n) {
     count = 0;
     for (var i = 1; i < n; i = i * 2) {
@@ -125,7 +125,7 @@ function O_LOG_2(n) {
 
 **O(Sqrt(n)):**
 
-```
+```java
 function O_SQRT(n) {
     count = 0;
     for (var i = 1; i * i < n; i++) {

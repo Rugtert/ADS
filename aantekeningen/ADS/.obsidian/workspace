@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CompareTo, Equals.md",
-            "mode": "preview"
+            "file": "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CompareTo, Equals.md",
+                "file": "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
   },
   "active": "324c4049e944bdc6",
   "lastOpenFiles": [
-    "CompareTo, Equals.md",
-    "Algemeen.md",
-    "Voorbeelden/Voorbeeld HashSet.md",
-    "Wat komt er op de toets.md",
+    "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
     "Tijd en geheugencomplexiteit.md",
+    "Algemeen.md",
+    "Voorbeelden/Zoek algoritme voorbeelden.md",
+    "Voorbeelden/Voorbeeld TreeSet.md",
+    "Voorbeelden/Voorbeeld HashSet.md",
+    "Voorbeelden/Sorteervoorbeelden.md",
+    "Voorbeelden/LinkedList Code.md",
     "Generics.md",
-    "Binaire Bomen.md",
-    "DataStructuren/Sets.md",
-    "Sorteren/Selection Sort.md",
-    "Sorteren/Counting Sort.md"
+    "Binaire Bomen.md"
   ]
 }
