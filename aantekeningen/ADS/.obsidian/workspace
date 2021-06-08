@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "aa962557fd21dcd9",
+        "id": "b8cde01d9d0ce474",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Binaire Bomen.md",
+            "file": "Wat komt er op de toets.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Binaire Bomen.md",
+                "file": "Wat komt er op de toets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,17 +97,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aa962557fd21dcd9",
+  "active": "b8cde01d9d0ce474",
   "lastOpenFiles": [
-    "Binaire Bomen.md",
-    "Generics.md",
-    "Untitled.md",
-    "DataStructuren/Sets.md",
-    "Snelheid van algoritmen.md",
-    "DataStructuren/Arrays.md",
-    "Algemeen.md",
-    "DataStructuren/Queues.md",
     "Wat komt er op de toets.md",
-    "DataStructuren/Maps.md"
+    "Binaire Bomen.md",
+    "DataStructuren/Sets.md",
+    "Sorteren/Tree Sort.md",
+    "Voorbeelden/Voorbeeld TreeSet.md",
+    "Hash.md",
+    "CompareTo, Equals.md",
+    "Generics.md",
+    "Snelheid van algoritmen.md",
+    "Untitled.md"
   ]
 }

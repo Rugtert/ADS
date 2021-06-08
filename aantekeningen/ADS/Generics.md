@@ -23,6 +23,8 @@ werkt dus niet. Daar hebben we Object voor:
 ```java
 public void print(Object param)
 ```
+
+![[Pasted image 20210608165209.png]]
 ### Example Code
 ```java
     public void printer(List<? extends Zoogdier> zoogdierList) {

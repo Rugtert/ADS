@@ -20,6 +20,7 @@ HashSet: Een set met O(1) operaties die gebruik maakt van hashes.
 
 ## TreeSets
 TreeSet implementeert een "self balancing binary search tree"
+![[Pasted image 20210608172914.png]]
 ### Voor en nadelen
 Voordeel is dat alle objecten in de treeset altijd gesorteerd zijn en dat het eerste en laatste element pollen met O(log n) gaat. Nadeel is dat toevoegen van een element altijd O(log n) is in plaats van O(1) bij hashset
 ![[Pasted image 20210604171436.png]]
