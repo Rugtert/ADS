@@ -15,3 +15,5 @@ O(nlog n): linearitmisch: product van de vorige twee - dit is de complexiteit va
 O(n^2): kwadratisch: tijd neemt kwadratisch toe met de grootte van het probleem;
 O(2^n): exponentieel: tijd neemt exponentieel toe met de grootte van het probleem.
 O(n!) : berekenen van permutaties: tijd is evenredig met n faculteit.
+
+![[Pasted image 20210608151724.png]]

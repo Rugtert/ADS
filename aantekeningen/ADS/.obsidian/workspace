@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DataStructuren/Queues.md",
+            "file": "Snelheid van algoritmen.md",
             "mode": "preview"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "datast",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,13 +48,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bdf8f13f05a74b52",
@@ -70,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataStructuren/Queues.md",
+                "file": "Snelheid van algoritmen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,10 +99,10 @@
   },
   "active": "aa962557fd21dcd9",
   "lastOpenFiles": [
+    "Snelheid van algoritmen.md",
     "DataStructuren/Queues.md",
     "Wat komt er op de toets.md",
     "DataStructuren/Maps.md",
-    "Snelheid van algoritmen.md",
     "Voorbeelden/Zoek algoritme voorbeelden.md",
     "Algemeen.md",
     "Tijd en geheugencomplexiteit.md",
