@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.tutorialspoint.com/java/java_applet_basics.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jun 2021 09:41:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Java - Applet Basics - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="Java - Applet Basics - An applet is a Java program that runs in a Web browser. An applet can be a fully functional Java application because it has the entire Java API at its disposal."/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="java_applet_basics.html" />
+<link rel="shortcut icon" href="https://www.tutorialspoint.com/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="../themes/css/style-min-v168f6.css?v=3.1.2.336">
+<script src="../themes/js/script-min-v1bfcb.js?v=3.0.2040229"></script>
+<script>
+function printPage() { window.print(); }
+function readCookie(name) {
+     var nameEQ = name + "=";
+     var ca = document.cookie.split(';');
+     for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+     }
+     return null;
+}
+</script>
+<script id="adp1" data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '../../cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script id="adp2" data-cfasync="false" type="text/javascript">(function(w, d) {var cval = readCookie('subscription_purchased');if(cval == '1'){ return; } var s = d.createElement('script'); s.src = '../../delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.butnn-save a{color:#fff;} .notes_msg{color:green; margin-left:20px; margin-top:15px;}
+.right-menu .mui-btn {
+    background-color:#eb4847;
+}
+a.demo {
+    background:#eb4847;
+}
+li.heading {
+    background:#eb4847;
+}
+.course-box{background:#eb4847}
+.home-intro-sub p{color:#eb4847}
+a.demo{
+   top: 12px;
+   float:right;
+}
+.prettyprint{
+   width: 99%;
+}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- pop-up -->
+<div class="pop-modal overlay-pop popdiv">
+<div class="modal-window small">
+<span class="close" title="close">×</span>
+<div class="pop-content">
+</div>
+<span class="msg" ></span>
+</div>
+</div>
+<div class="wrap_loader">
+<div class="imgLoader"><img src="../videotutorials/images/loader.gif" alt="Tutorialspoint" width="70" height="70"></div>
+</div>
+<input type="hidden" id="vu" name="vu" value="" />
+<!-- pop-up -->
+
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item articles">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com/" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="top-menu-item qa login">
+<a href="https://www.tutorialspoint.com/videotutorials/login.php" target="_blank" title="Tutorials Point - Login"><i class="fa fa-sign-in-alt"></i> <span>Login</span></a> 
+</div>        
+<div class="top-menu-item qa login">
+<a href="https://www.tutorialspoint.com/videotutorials/subscription.php" target="_blank" title="Paid Package"><i class="fa fa-book-reader"></i> <span>Packages</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="https://www.tutorialspoint.com/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="https://www.tutorialspoint.com/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="https://www.tutorialspoint.com/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="https://www.tutorialspoint.com/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="https://www.tutorialspoint.com/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="https://www.tutorialspoint.com/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="https://www.tutorialspoint.com/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="https://www.tutorialspoint.com/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="https://www.tutorialspoint.com/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="https://www.tutorialspoint.com/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="https://www.tutorialspoint.com/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="https://www.tutorialspoint.com/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="https://www.tutorialspoint.com/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="https://www.tutorialspoint.com/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="https://www.tutorialspoint.com/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="https://www.tutorialspoint.com/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="https://www.tutorialspoint.com/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/index.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<script async src="../../cse.google.com/f8b02.txt?cx=000263362972888060243:yfed6eu421q"></script>
+<div class='gcse-search'></div>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li class="login"><a href="https://www.tutorialspoint.com/videotutorials/login.php"><i class="fal fa-sign-in-alt"></i> <span>Login</span></a></li>
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="images/java-mini-logo.jpg" alt="Java Tutorial" />
+</div>
+<ul class="toc chapters">
+<li><a class="videolink" href="https://www.tutorialspoint.com/java_online_training/index.asp" target="_blank"><img src="images/java-video-tutorials.jpg" alt="Java Video Tutorials" /></a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Java Tutorial</li>
+<li><a href="index.html">Java - Home</a></li>
+<li><a href="java_overview.html">Java - Overview</a></li>
+<li><a href="java_environment_setup.html">Java - Environment Setup</a></li>
+<li><a href="java_basic_syntax.html">Java - Basic Syntax</a></li>
+<li><a href="java_object_classes.html">Java - Object &amp; Classes</a></li>
+<li><a href="java_constructors.html">Java - Constructors</a></li>
+<li><a href="java_basic_datatypes.html">Java - Basic Datatypes</a></li>
+<li><a href="java_variable_types.html">Java - Variable Types</a></li>
+<li><a href="java_modifier_types.html">Java - Modifier Types</a></li>
+<li><a href="java_basic_operators.html">Java - Basic Operators</a></li>
+<li><a href="java_loop_control.html">Java - Loop Control</a></li>
+<li><a href="java_decision_making.html">Java - Decision Making</a></li>
+<li><a href="java_numbers.html">Java - Numbers</a></li>
+<li><a href="java_characters.html">Java - Characters</a></li>
+<li><a href="java_strings.html">Java - Strings</a></li>
+<li><a href="java_arrays.html">Java - Arrays</a></li>
+<li><a href="java_date_time.html">Java - Date &amp; Time</a></li>
+<li><a href="java_regular_expressions.html">Java - Regular Expressions</a></li>
+<li><a href="java_methods.html">Java - Methods</a></li>
+<li><a href="java_files_io.html">Java - Files and I/O</a></li>
+<li><a href="java_exceptions.html">Java - Exceptions</a></li>
+<li><a href="java_innerclasses.html">Java - Inner classes</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Java Object Oriented</li>
+<li><a href="java_inheritance.html">Java - Inheritance</a></li>
+<li><a href="java_overriding.html">Java - Overriding</a></li>
+<li><a href="java_polymorphism.html">Java - Polymorphism</a></li>
+<li><a href="java_abstraction.html">Java - Abstraction</a></li>
+<li><a href="java_encapsulation.html">Java - Encapsulation</a></li>
+<li><a href="java_interfaces.html">Java - Interfaces</a></li>
+<li><a href="java_packages.html">Java - Packages</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Java Advanced</li>
+<li><a href="java_data_structures.html">Java - Data Structures</a></li>
+<li><a href="java_collections.html">Java - Collections</a></li>
+<li><a href="java_generics.html">Java - Generics</a></li>
+<li><a href="java_serialization.html">Java - Serialization</a></li>
+<li><a href="java_networking.html">Java - Networking</a></li>
+<li><a href="java_sending_email.html">Java - Sending Email</a></li>
+<li><a href="java_multithreading.html">Java - Multithreading</a></li>
+<li><a href="java_applet_basics.html">Java - Applet Basics</a></li>
+<li><a href="java_documentation.html">Java - Documentation</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Java Useful Resources</li>
+<li><a href="java_questions_answers.html">Java - Questions and Answers</a></li>
+<li><a href="java_quick_guide.html">Java - Quick Guide</a></li>
+<li><a href="java_useful_resources.html">Java - Useful Resources</a></li>
+<li><a href="java_discussion.html">Java - Discussion</a></li>
+<li><a href="https://www.tutorialspoint.com/javaexamples/index.htm">Java - Examples</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>Java - Applet Basics</h1>
+<hr />
+<div id="google-top-ads">
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center!important;min-height:90px!important"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="java_multithreading.html"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="java_documentation.html">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>An <b>applet</b> is a Java program that runs in a Web browser. An applet can be a fully functional Java application because it has the entire Java API at its disposal.</p>
+<p>There are some important differences between an applet and a standalone Java application, including the following &minus;</p>
+<ul class="list">
+<li><p>An applet is a Java class that extends the java.applet.Applet class.</p></li>
+<li><p>A main() method is not invoked on an applet, and an applet class will not define main().</p></li>
+<li><p>Applets are designed to be embedded within an HTML page.</p></li>
+<li><p>When a user views an HTML page that contains an applet, the code for the applet is downloaded to the user's machine.</p></li>
+<li><p>A JVM is required to view an applet. The JVM can be either a plug-in of the Web browser or a separate runtime environment.</p></li>
+<li><p>The JVM on the user's machine creates an instance of the applet class and invokes various methods during the applet's lifetime.</p></li>
+<li><p>Applets have strict security rules that are enforced by the Web browser. The security of an applet is often referred to as sandbox security, comparing the applet to a child playing in a sandbox with various rules that must be followed.</p></li>
+<li><p>Other classes that the applet needs can be downloaded in a single Java Archive (JAR) file.</p></li>
+</ul>
+<h2>Life Cycle of an Applet</h2>
+<p>Four methods in the Applet class gives you the framework on which you build any serious applet &minus;</p>
+<ul class="list">
+<li><p><b>init</b> &minus; This method is intended for whatever initialization is needed for your applet. It is called after the param tags inside the applet tag have been processed.</p></li>
+<li><p><b>start</b> &minus; This method is automatically called after the browser calls the init method. It is also called whenever the user returns to the page containing the applet after having gone off to other pages.</p></li>
+<li><p><b>stop</b> &minus; This method is automatically called when the user moves off the page on which the applet sits. It can, therefore, be called repeatedly in the same applet.</p></li>
+<li><p><b>destroy</b> &minus; This method is only called when the browser shuts down normally. Because applets are meant to live on an HTML page, you should not normally leave resources behind after a user leaves the page that contains the applet.</p></li>
+<li><p><b>paint</b> &minus; Invoked immediately after the start() method, and also any time the applet needs to repaint itself in the browser. The paint() method is actually inherited from the java.awt.</p></li>
+</ul>
+<h2>A "Hello, World" Applet</h2>
+<p>Following is a simple applet named HelloWorldApplet.java &minus;</p>
+<pre class="prettyprint notranslate">
+import java.applet.*;
+import java.awt.*;
+
+public class HelloWorldApplet extends Applet {
+   public void paint (Graphics g) {
+      g.drawString ("Hello World", 25, 50);
+   }
+}
+</pre>
+<p>These import statements bring the classes into the scope of our applet class &minus;</p>
+<ul class="list">
+<li>java.applet.Applet</li>
+<li>java.awt.Graphics</li>
+</ul>
+<p>Without those import statements, the Java compiler would not recognize the classes Applet and Graphics, which the applet class refers to.</p>
+<h2>The Applet Class</h2>
+<p>Every applet is an extension of the <i>java.applet.Applet class</i>. The base Applet class provides methods that a derived Applet class may call to obtain information and services from the browser context.</p>
+<p>These include methods that do the following &minus;</p>
+<ul class="list">
+<li>Get applet parameters</li>
+<li>Get the network location of the HTML file that contains the applet</li>
+<li>Get the network location of the applet class directory</li>
+<li>Print a status message in the browser</li>
+<li>Fetch an image</li>
+<li>Fetch an audio clip</li>
+<li>Play an audio clip</li>
+<li>Resize the applet</li>
+</ul>
+<p>Additionally, the Applet class provides an interface by which the viewer or browser obtains information about the applet and controls the applet's execution. The viewer may &minus;</p>
+<ul class="list">
+<li>Request information about the author, version, and copyright of the applet</li>
+<li>Request a description of the parameters the applet recognizes</li>
+<li>Initialize the applet</li>
+<li>Destroy the applet</li>
+<li>Start the applet's execution</li>
+<li>Stop the applet's execution</li>
+</ul>
+<p>The Applet class provides default implementations of each of these methods. Those implementations may be overridden as necessary.</p>
+<p>The "Hello, World" applet is complete as it stands. The only method overridden is the paint method.</p>
+<h2>Invoking an Applet</h2>
+<p>An applet may be invoked by embedding directives in an HTML file and viewing the file through an applet viewer or Java-enabled browser.</p>
+<p>The &lt;applet&gt; tag is the basis for embedding an applet in an HTML file. Following is an example that invokes the "Hello, World" applet &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;title&gt;The Hello, World Applet&lt;/title&gt;
+   &lt;hr&gt;
+   &lt;applet code = "HelloWorldApplet.class" width = "320" height = "120"&gt;
+      If your browser was Java-enabled, a "Hello, World"
+      message would appear here.
+   &lt;/applet&gt;
+   &lt;hr&gt;
+&lt;/html&gt;
+</pre>
+<p><b>Note</b> &minus; You can refer to <a href="https://www.tutorialspoint.com/html/html_applet_tag.htm" title="HTML Applet Tag" target="_blank">HTML Applet Tag</a> to understand more about calling applet from HTML.</p>
+<p>The code attribute of the &lt;applet&gt; tag is required. It specifies the Applet class to run. Width and height are also required to specify the initial size of the panel in which an applet runs. The applet directive must be closed with an &lt;/applet&gt; tag.</p>
+<p>If an applet takes parameters, values may be passed for the parameters by adding &lt;param&gt; tags between &lt;applet&gt; and &lt;/applet&gt;. The browser ignores text and other tags between the applet tags.</p>
+<p>Non-Java-enabled browsers do not process &lt;applet&gt; and &lt;/applet&gt;. Therefore, anything that appears between the tags, not related to the applet, is visible in non-Java-enabled browsers.</p>
+<p>The viewer or browser looks for the compiled Java code at the location of the document. To specify otherwise, use the codebase attribute of the &lt;applet&gt; tag as shown &minus;</p>
+<pre class="result notranslate">
+&lt;applet codebase = "https://amrood.com/applets" code = "HelloWorldApplet.class"
+   width = "320" height = "120"&gt;
+</pre>
+<p>If an applet resides in a package other than the default, the holding package must be specified in the code attribute using the period character (.) to separate package/class components. For example &minus;</p>
+<pre class="result notranslate">
+&lt;applet  = "mypackage.subpackage.TestApplet.class" 
+   width = "320" height = "120"&gt;
+</pre>
+<h2>Getting Applet Parameters</h2>
+<p>The following example demonstrates how to make an applet respond to setup parameters specified in the document. This applet displays a checkerboard pattern of black and a second color.</p>
+<p>The second color and the size of each square may be specified as parameters to the applet within the document.</p>
+<p>CheckerApplet gets its parameters in the init() method. It may also get its parameters in the paint() method. However, getting the values and saving the settings once at the start of the applet, instead of at every refresh, is convenient and efficient.</p>
+<p>The applet viewer or browser calls the init() method of each applet it runs. The viewer calls init() once, immediately after loading the applet. (Applet.init() is implemented to do nothing.) Override the default implementation to insert custom initialization code.</p>
+<p>The Applet.getParameter() method fetches a parameter given the parameter's name (the value of a parameter is always a string). If the value is numeric or other non-character data, the string must be parsed.</p>
+<p>The following is a skeleton of CheckerApplet.java &minus;</p>
+<pre class="prettyprint notranslate">
+import java.applet.*;
+import java.awt.*;
+
+public class CheckerApplet extends Applet {
+   int squareSize = 50;   // initialized to default size
+   public void init() {}
+   private void parseSquareSize (String param) {}
+   private Color parseColor (String param) {}
+   public void paint (Graphics g) {}
+}
+</pre>
+<p>Here are CheckerApplet's init() and private parseSquareSize() methods &minus;</p>
+<pre class="prettyprint notranslate">
+public void init () {
+   String squareSizeParam = getParameter ("squareSize");
+   parseSquareSize (squareSizeParam);
+   
+   String colorParam = getParameter ("color");
+   Color fg = parseColor (colorParam);
+   
+   setBackground (Color.black);
+   setForeground (fg);
+}
+
+private void parseSquareSize (String param) {
+   if (param == null) return;
+   try {
+      squareSize = Integer.parseInt (param);
+   } catch (Exception e) {
+      // Let default value remain
+   }
+}
+</pre>
+<p>The applet calls parseSquareSize() to parse the squareSize parameter. parseSquareSize() calls the library method Integer.parseInt(), which parses a string and returns an integer. Integer.parseInt() throws an exception whenever its argument is invalid.</p>
+<p>Therefore, parseSquareSize() catches exceptions, rather than allowing the applet to fail on bad input.</p>
+<p>The applet calls parseColor() to parse the color parameter into a Color value. parseColor() does a series of string comparisons to match the parameter value to the name of a predefined color. You need to implement these methods to make this applet work.</p>
+<h2>Specifying Applet Parameters</h2>
+<p>The following is an example of an HTML file with a CheckerApplet embedded in it. The HTML file specifies both parameters to the applet by means of the &lt;param&gt; tag.</p>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;title&gt;Checkerboard Applet&lt;/title&gt;
+   &lt;hr&gt;
+   &lt;applet code = "CheckerApplet.class" width = "480" height = "320"&gt;
+      &lt;param name = "color" value = "blue"&gt;
+      &lt;param name = "squaresize" value = "30"&gt;
+   &lt;/applet&gt;
+   &lt;hr&gt;
+&lt;/html&gt;
+</pre>
+<p><b>Note</b> &minus; Parameter names are not case sensitive.</p>
+<h2>Application Conversion to Applets</h2>
+<p>It is easy to convert a graphical Java application (that is, an application that uses the AWT and that you can start with the Java program launcher) into an applet that you can embed in a web page.</p>
+<p>Following are the specific steps for converting an application to an applet.</p>
+<ul class="list">
+<li><p>Make an HTML page with the appropriate tag to load the applet code.</p></li>
+<li><p>Supply a subclass of the JApplet class. Make this class public. Otherwise, the applet cannot be loaded.</p></li>
+<li><p>Eliminate the main method in the application. Do not construct a frame window for the application. Your application will be displayed inside the browser.</p></li>
+<li><p>Move any initialization code from the frame window constructor to the init method of the applet. You don't need to explicitly construct the applet object. The browser instantiates it for you and calls the init method.</p></li>
+<li><p>Remove the call to setSize; for applets, sizing is done with the width and height parameters in the HTML file.</p></li>
+<li><p>Remove the call to setDefaultCloseOperation. An applet cannot be closed; it terminates when the browser exits.</p></li>
+<li><p>If the application calls setTitle, eliminate the call to the method. Applets cannot have title bars. (You can, of course, title the web page itself, using the HTML title tag.)</p></li>
+<li><p>Don't call setVisible(true). The applet is displayed automatically.</p></li>
+</ul>
+<h2>Event Handling</h2>
+<p>Applets inherit a group of event-handling methods from the Container class. The Container class defines several methods, such as processKeyEvent and processMouseEvent, for handling particular types of events, and then one catch-all method called processEvent.</p>
+<p>In order to react to an event, an applet must override the appropriate event-specific method.</p>
+<pre class="prettyprint notranslate">
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+import java.applet.Applet;
+import java.awt.Graphics;
+
+public class ExampleEventHandling extends Applet implements MouseListener {
+   StringBuffer strBuffer;
+
+   public void init() {
+      addMouseListener(this);
+      strBuffer = new StringBuffer();
+      addItem("initializing the apple ");
+   }
+
+   public void start() {
+      addItem("starting the applet ");
+   }
+
+   public void stop() {
+      addItem("stopping the applet ");
+   }
+
+   public void destroy() {
+      addItem("unloading the applet");
+   }
+
+   void addItem(String word) {
+      System.out.println(word);
+      strBuffer.append(word);
+      repaint();
+   }
+
+   public void paint(Graphics g) {
+      // Draw a Rectangle around the applet's display area.
+      g.drawRect(0, 0, 
+      getWidth() - 1,
+      getHeight() - 1);
+
+      // display the string inside the rectangle.
+      g.drawString(strBuffer.toString(), 10, 20);
+   }
+
+   
+   public void mouseEntered(MouseEvent event) {
+   }
+   public void mouseExited(MouseEvent event) {
+   }
+   public void mousePressed(MouseEvent event) {
+   }
+   public void mouseReleased(MouseEvent event) {
+   }
+   public void mouseClicked(MouseEvent event) {
+      addItem("mouse clicked! ");
+   }
+}
+</pre>
+<p>Now, let us call this applet as follows &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;title&gt;Event Handling&lt;/title&gt;
+   &lt;hr&gt;
+   &lt;applet code = "ExampleEventHandling.class" 
+      width = "300" height = "300"&gt;
+   &lt;/applet&gt;
+   &lt;hr&gt;
+&lt;/html&gt;
+</pre>
+<p>Initially, the applet will display "initializing the applet. Starting the applet." Then once you click inside the rectangle, "mouse clicked" will be displayed as well.</p>
+<h2>Displaying Images</h2>
+<p>An applet can display images of the format GIF, JPEG, BMP, and others. To display an image within the applet, you use the drawImage() method found in the java.awt.Graphics class.</p>
+<p>Following is an example illustrating all the steps to show images &minus;</p>
+<pre class="prettyprint notranslate">
+import java.applet.*;
+import java.awt.*;
+import java.net.*;
+
+public class ImageDemo extends Applet {
+   private Image image;
+   private AppletContext context;
+   
+   public void init() {
+      context = this.getAppletContext();
+      String imageURL = this.getParameter("image");
+      if(imageURL == null) {
+         imageURL = "java.jpg";
+      }
+      try {
+         URL url = new URL(this.getDocumentBase(), imageURL);
+         image = context.getImage(url);
+      } catch (MalformedURLException e) {
+         e.printStackTrace();
+         // Display in browser status bar
+         context.showStatus("Could not load image!");
+      }
+   }
+   
+   public void paint(Graphics g) {
+      context.showStatus("Displaying image");
+      g.drawImage(image, 0, 0, 200, 84, null);
+      g.drawString("www.javalicense.com", 35, 100);
+   }  
+}
+</pre>
+<p>Now, let us call this applet as follows &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;title&gt;The ImageDemo applet&lt;/title&gt;
+   &lt;hr&gt;
+   &lt;applet code = "ImageDemo.class" width = "300" height = "200"&gt;
+      &lt;param name = "image" value = "java.jpg"&gt;
+   &lt;/applet&gt;
+   &lt;hr&gt;
+&lt;/html&gt;
+</pre>
+<h2>Playing Audio</h2>
+<p>An applet can play an audio file represented by the AudioClip interface in the java.applet package. The AudioClip interface has three methods, including &minus;</p>
+<ul class="list">
+<li><p><b>public void play()</b> &minus; Plays the audio clip one time, from the beginning.</p></li>
+<li><p><b>public void loop()</b> &minus; Causes the audio clip to replay continually.</p></li>
+<li><p><b>public void stop()</b> &minus; Stops playing the audio clip.</p></li>
+</ul>
+<p>To obtain an AudioClip object, you must invoke the getAudioClip() method of the Applet class. The getAudioClip() method returns immediately, whether or not the URL resolves to an actual audio file. The audio file is not downloaded until an attempt is made to play the audio clip.</p>
+<p>Following is an example illustrating all the steps to play an audio &minus;</p>
+<pre class="prettyprint notranslate">
+import java.applet.*;
+import java.awt.*;
+import java.net.*;
+
+public class AudioDemo extends Applet {
+   private AudioClip clip;
+   private AppletContext context;
+   
+   public void init() {
+      context = this.getAppletContext();
+      String audioURL = this.getParameter("audio");
+      if(audioURL == null) {
+         audioURL = "default.au";
+      }
+      try {
+         URL url = new URL(this.getDocumentBase(), audioURL);
+         clip = context.getAudioClip(url);
+      } catch (MalformedURLException e) {
+         e.printStackTrace();
+         context.showStatus("Could not load audio file!");
+      }
+   }
+   
+   public void start() {
+      if(clip != null) {
+         clip.loop();
+      }
+   }
+   
+   public void stop() {
+      if(clip != null) {
+         clip.stop();
+      }
+   }
+}
+</pre>
+<p>Now, let us call this applet as follows &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;title&gt;The ImageDemo applet&lt;/title&gt;
+   &lt;hr&gt;
+   &lt;applet code = "ImageDemo.class" width = "0" height = "0"&gt;
+      &lt;param name = "audio" value = "test.wav"&gt;
+   &lt;/applet&gt;
+   &lt;hr&gt;
+&lt;/html&gt;
+</pre>
+<p>You can use test.wav on your PC to test the above example.</p>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="java_multithreading.html"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="java_documentation.html">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="space-bottom" style="margin-bottom:20px;"></div>
+<div class="google-bottom-ads" id="google-bottom-ads">
+<div>Advertisements</div>
+<div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+</div>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads" id="chapter-menu" style="display: none;">
+<input type="hidden" id="vu" name="vu" value=""/>
+<div class="space-top"></div>
+<div class="mui-panel">
+<ul class="paid-menu" id="div-right-menu">
+<li><a class="hide-on-mobile" href="javascript:printPage();" title="Print this page"><i class="fa fa-print"></i> Print</a></li>
+<li><a href="javascript:void(0)" class="add_notes" title="Add Custom Notes" onclick="add_notes();"><i class="fa fa-edit"></i>&nbsp;Add Notes</a></li>
+<li><a href="javascript:void(0)" class="clsPage text-bookmark" id="text-bookmark" title="Add Bookmark" onclick="text_bookmark()"><i class="fal fa-bookmark"></i>&nbsp;Bookmark this page </a></li>
+<li><a href="javascript:void(0);" id="report_error_popup" onclick="report_error_popup();" title="Report Error"><i class="fal fa-bell"></i>&nbsp;Report Error</a></li>
+<li><a href="javascript:void(0);" id="suggestion_popup" title="Give Suggestions" onclick="suggestion_popup();"><i class="fal fa-badge-check"></i>&nbsp;Suggestions</a></li>
+</ul>
+<div class="profile-my-notes" id="text_notes_div" style="display:none;">
+<textarea rows="10" class="text_notes" id="text_notes" name="text_notes" placeholder="Enter your custom notes..."></textarea>
+<br>
+<a href="javascript:void(0);" id="submit_text_notes" class="butn-save" onclick="submit_text_notes();"> Save</a>
+<a href="javascript:void(0);" class="pop-no butn-cancel" onclick="notesClose();"> Close</a>
+<p class="notes_msg"  ></p>
+</div>
+<div class="bottom-menu">
+<button class="tp-btn"><i class="fal fa-box-up"></i> <a href="https://www.tutorialspoint.com/videotutorials/dashboard.php">Dashboard</a></button>
+<button class="tp-btn"><i class="fal fa-sign-out-alt"></i> <a href="https://www.tutorialspoint.com/videotutorials/userlogout.php">Logout</a></button>
+</div>
+</div>
+</div>
+<div class="mui-col-md-2 google-right-ads" id="google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" style="margin: 0px auto !important;margin-top:5px;min-height:250px!important">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;min-height:250px!important">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;min-height:600px!important">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom" style="margin-bottom:15px;"></div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="https://www.tutorialspoint.com/index.htm" class="logo"><img class="img-responsive" src="../images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="https://www.tutorialspoint.com/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="https://www.tutorialspoint.com/about/return_refund_policy.htm"> <i class="fal fa-asterisk"></i> Refund Policy</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="https://www.tutorialspoint.com/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="https://www.tutorialspoint.com/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2021. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+<script src="../videotutorials/js/text_menu3860.js?v=1"></script>
+<script>
+$(document).ready(function (){
+    var cval = readCookie('subscription_purchased');
+    if(cval == '1'){
+          // logged in and purchased subscription.
+          $('#google-right-ads').remove();
+          $('#adp1').remove();
+          $('#adp2').remove();
+          $('#stickyparent').remove();
+          $('#google-top-ads').remove();
+          $('#adp_top_ads').remove();
+          $('#google-bottom-ads').remove();
+          $('.tutorial-content hr').remove();
+          $('.login').remove();
+          $('#chapter-menu').show();
+          $('.content h1').css("border-bottom", "none");
+          $('.google-right-ads').css("padding-right", "0px");
+          $('.tutorial-content').css("border-radius", "10px");
+          $('#chapter-menu .mui-panel').css("border-radius", "10px");
+     }
+});
+</script>
+</footer>
+</body>
+
+<!-- Mirrored from www.tutorialspoint.com/java/java_applet_basics.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jun 2021 09:41:03 GMT -->
+</html>

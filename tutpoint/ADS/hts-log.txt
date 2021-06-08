@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 08 Jun 2021 11:36:38 at https://www.tutorialspoint.com/data_structures_algorithms/index.htm +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0c8H0%kf2A25000000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.tutorialspoint.com/data_structures_algorithms/index.htm -O1 "D:\httrack\ads\ADS" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:36:38	Warning: 	* security warning: maximum bandwidth limited to 250000 to avoid server overload
+11:36:39	Warning: 	Note: due to https://www.tutorialspoint.com remote robots.txt rules, links beginning with these path will be forbidden: /assets/, /video/, /abap/, /tmp/, /logs/, /rate/, /store/, /cgi-bin/, /programming_example/, /videotutorials/video_course_view.php?*, /videotutorials/course_view.php?*, /*/*_question_bank/, //*/*/*/*/src/ (see in the options to disable this)
+11:37:55	Error: 	"Not Found" (404) at link https://www.tutorialspoint.com/themes/images/bnner-design-lib.png (from https://www.tutorialspoint.com/themes/css/style-min-v1.css?v=3.1.2.336)
+11:37:55	Error: 	"Not Found" (404) at link https://www.tutorialspoint.com/themes/images/dropdown-top-icon.png (from https://www.tutorialspoint.com/themes/css/style-min-v1.css?v=3.1.2.336)
+11:37:55	Error: 	"Forbidden" (403) at link https://dev.tutorialspoint.com/profile/images/loader.gif (from https://www.tutorialspoint.com/themes/css/style-min-v1.css?v=3.1.2.336)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 30 seconds : 272 links scanned, 268 files written (7764154 bytes overall) [5282952 bytes received at 58699 bytes/sec], 3608101 bytes transferred using HTTP compression in 88 files, ratio 26%, 1.0 requests per connection
+(3 errors, 2 warnings, 0 messages)

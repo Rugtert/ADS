@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.tutorialspoint.com/java/java_methods.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jun 2021 09:40:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Java - Methods - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="Java - Methods - A Java method is a collection of statements that are grouped together to perform an operation. When you call the System.out.println() method, for example, the s"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="java_methods.html" />
+<link rel="shortcut icon" href="https://www.tutorialspoint.com/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="../themes/css/style-min-v168f6.css?v=3.1.2.336">
+<script src="../themes/js/script-min-v1bfcb.js?v=3.0.2040229"></script>
+<script>
+function printPage() { window.print(); }
+function readCookie(name) {
+     var nameEQ = name + "=";
+     var ca = document.cookie.split(';');
+     for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+     }
+     return null;
+}
+</script>
+<script id="adp1" data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '../../cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script id="adp2" data-cfasync="false" type="text/javascript">(function(w, d) {var cval = readCookie('subscription_purchased');if(cval == '1'){ return; } var s = d.createElement('script'); s.src = '../../delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.butnn-save a{color:#fff;} .notes_msg{color:green; margin-left:20px; margin-top:15px;}
+.right-menu .mui-btn {
+    background-color:#eb4847;
+}
+a.demo {
+    background:#eb4847;
+}
+li.heading {
+    background:#eb4847;
+}
+.course-box{background:#eb4847}
+.home-intro-sub p{color:#eb4847}
+a.demo{
+   top: 12px;
+   float:right;
+}
+.prettyprint{
+   width: 99%;
+}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- pop-up -->
+<div class="pop-modal overlay-pop popdiv">
+<div class="modal-window small">
+<span class="close" title="close">×</span>
+<div class="pop-content">
+</div>
+<span class="msg" ></span>
+</div>
+</div>
+<div class="wrap_loader">
+<div class="imgLoader"><img src="../videotutorials/images/loader.gif" alt="Tutorialspoint" width="70" height="70"></div>
+</div>
+<input type="hidden" id="vu" name="vu" value="" />
+<!-- pop-up -->
+
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item articles">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com/" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="top-menu-item qa login">
+<a href="https://www.tutorialspoint.com/videotutorials/login.php" target="_blank" title="Tutorials Point - Login"><i class="fa fa-sign-in-alt"></i> <span>Login</span></a> 
+</div>        
+<div class="top-menu-item qa login">
+<a href="https://www.tutorialspoint.com/videotutorials/subscription.php" target="_blank" title="Paid Package"><i class="fa fa-book-reader"></i> <span>Packages</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="https://www.tutorialspoint.com/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="https://www.tutorialspoint.com/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="https://www.tutorialspoint.com/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="https://www.tutorialspoint.com/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="https://www.tutorialspoint.com/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="https://www.tutorialspoint.com/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="https://www.tutorialspoint.com/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="https://www.tutorialspoint.com/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="https://www.tutorialspoint.com/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="https://www.tutorialspoint.com/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="https://www.tutorialspoint.com/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="https://www.tutorialspoint.com/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="https://www.tutorialspoint.com/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="https://www.tutorialspoint.com/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="https://www.tutorialspoint.com/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="https://www.tutorialspoint.com/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="https://www.tutorialspoint.com/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/index.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<script async src="../../cse.google.com/f8b02.txt?cx=000263362972888060243:yfed6eu421q"></script>
+<div class='gcse-search'></div>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li class="login"><a href="https://www.tutorialspoint.com/videotutorials/login.php"><i class="fal fa-sign-in-alt"></i> <span>Login</span></a></li>
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="images/java-mini-logo.jpg" alt="Java Tutorial" />
+</div>
+<ul class="toc chapters">
+<li><a class="videolink" href="https://www.tutorialspoint.com/java_online_training/index.asp" target="_blank"><img src="images/java-video-tutorials.jpg" alt="Java Video Tutorials" /></a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Java Tutorial</li>
+<li><a href="index.html">Java - Home</a></li>
+<li><a href="java_overview.html">Java - Overview</a></li>
+<li><a href="java_environment_setup.html">Java - Environment Setup</a></li>
+<li><a href="java_basic_syntax.html">Java - Basic Syntax</a></li>
+<li><a href="java_object_classes.html">Java - Object &amp; Classes</a></li>
+<li><a href="java_constructors.html">Java - Constructors</a></li>
+<li><a href="java_basic_datatypes.html">Java - Basic Datatypes</a></li>
+<li><a href="java_variable_types.html">Java - Variable Types</a></li>
+<li><a href="java_modifier_types.html">Java - Modifier Types</a></li>
+<li><a href="java_basic_operators.html">Java - Basic Operators</a></li>
+<li><a href="java_loop_control.html">Java - Loop Control</a></li>
+<li><a href="java_decision_making.html">Java - Decision Making</a></li>
+<li><a href="java_numbers.html">Java - Numbers</a></li>
+<li><a href="java_characters.html">Java - Characters</a></li>
+<li><a href="java_strings.html">Java - Strings</a></li>
+<li><a href="java_arrays.html">Java - Arrays</a></li>
+<li><a href="java_date_time.html">Java - Date &amp; Time</a></li>
+<li><a href="java_regular_expressions.html">Java - Regular Expressions</a></li>
+<li><a href="java_methods.html">Java - Methods</a></li>
+<li><a href="java_files_io.html">Java - Files and I/O</a></li>
+<li><a href="java_exceptions.html">Java - Exceptions</a></li>
+<li><a href="java_innerclasses.html">Java - Inner classes</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Java Object Oriented</li>
+<li><a href="java_inheritance.html">Java - Inheritance</a></li>
+<li><a href="java_overriding.html">Java - Overriding</a></li>
+<li><a href="java_polymorphism.html">Java - Polymorphism</a></li>
+<li><a href="java_abstraction.html">Java - Abstraction</a></li>
+<li><a href="java_encapsulation.html">Java - Encapsulation</a></li>
+<li><a href="java_interfaces.html">Java - Interfaces</a></li>
+<li><a href="java_packages.html">Java - Packages</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Java Advanced</li>
+<li><a href="java_data_structures.html">Java - Data Structures</a></li>
+<li><a href="java_collections.html">Java - Collections</a></li>
+<li><a href="java_generics.html">Java - Generics</a></li>
+<li><a href="java_serialization.html">Java - Serialization</a></li>
+<li><a href="java_networking.html">Java - Networking</a></li>
+<li><a href="java_sending_email.html">Java - Sending Email</a></li>
+<li><a href="java_multithreading.html">Java - Multithreading</a></li>
+<li><a href="java_applet_basics.html">Java - Applet Basics</a></li>
+<li><a href="java_documentation.html">Java - Documentation</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Java Useful Resources</li>
+<li><a href="java_questions_answers.html">Java - Questions and Answers</a></li>
+<li><a href="java_quick_guide.html">Java - Quick Guide</a></li>
+<li><a href="java_useful_resources.html">Java - Useful Resources</a></li>
+<li><a href="java_discussion.html">Java - Discussion</a></li>
+<li><a href="https://www.tutorialspoint.com/javaexamples/index.htm">Java - Examples</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>Java - Methods</h1>
+<hr />
+<div id="google-top-ads">
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center!important;min-height:90px!important"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="java_regular_expressions.html"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="java_files_io.html">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>A Java method is a collection of statements that are grouped together to perform an operation. When you call the System.out.<b>println()</b> method, for example, the system actually executes several statements in order to display a message on the console.</p>
+<p>Now you will learn how to create your own methods with or without return values, invoke a method with or without parameters, and apply method abstraction in the program design.</p>
+<h2>Creating Method</h2>
+<p>Considering the following example to explain the syntax of a method &minus;</p>
+<p><b>Syntax</b></p>
+<pre class="result notranslate">
+public static int methodName(int a, int b) {
+   // body
+}
+</pre>
+<p>Here,</p>
+<ul class="list">
+<li><p><b>public static</b> &minus; modifier</p></li>
+<li><p><b>int</b> &minus; return type</p></li>
+<li><p><b>methodName</b> &minus; name of the method</p></li>
+<li><p><b>a, b</b> &minus; formal parameters</p></li>
+<li><p><b>int a, int b</b> &minus; list of parameters</p></li>
+</ul>
+<p>Method definition consists of a method header and a method body. The same is shown in the following syntax &minus;</p>
+<p><b>Syntax</b></p>
+<pre class="result notranslate">
+modifier returnType nameOfMethod (Parameter List) {
+   // method body
+}
+</pre>
+<p>The syntax shown above includes &minus;</p>
+<ul class="list">
+<li><p><b>modifier</b> &minus; It defines the access type of the method and it is optional to use.</p></li>
+<li><p><b>returnType</b> &minus; Method may return a value.</p></li>
+<li><p><b>nameOfMethod</b> &minus; This is the method name. The method signature consists of the method name and the parameter list.</p></li>
+<li><p><b>Parameter List</b> &minus; The list of parameters, it is the type, order, and number of parameters of a method. These are optional, method may contain zero parameters.</p></li>
+<li><p><b>method body</b> &minus; The method body defines what the method does with the statements.</p></li>
+</ul>
+<p><b>Example</b></p>
+<p>Here is the source code of the above defined  method called <b>min()</b>. This method takes two parameters num1 and num2 and returns the maximum between the two &minus;</p> 
+<pre class="prettyprint notranslate">
+/** the snippet returns the minimum between two numbers */
+
+public static int minFunction(int n1, int n2) {
+   int min;
+   if (n1 &gt; n2)
+      min = n2;
+   else
+      min = n1;
+
+   return min; 
+}
+</pre>
+<h2>Method Calling</h2>
+<p>For using a method, it should be called. There are two ways in which a method is called i.e., method returns a value or returning nothing (no return value).</p>
+<p>The process of method calling is simple. When a program invokes a method, the program control gets transferred to the called method. This called method then returns control to the caller in two conditions, when &minus;</p>
+<ul class="list">
+<li>the return statement is executed.</li>
+<li>it reaches the method ending closing brace.</li>
+</ul>
+<p>The methods returning void is considered as call to a statement. Lets consider an example &minus;</p>
+<pre class="prettyprint notranslate">
+System.out.println("This is tutorialspoint.com!");
+</pre>
+<p>The method returning value can be understood by the following example &minus;</p>
+<pre class="prettyprint notranslate">
+int result = sum(6, 9);
+</pre>
+<p>Following is the example to demonstrate how to define a method and how to call it &minus;</p>
+<p><b>Example</b></p>
+<div class="demo-view">
+<a href="http://tpcg.io/37ZGly" target="_blank" class="demo" rel="nofollow"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+public class ExampleMinNumber {
+   
+   public static void main(String[] args) {
+      int a = 11;
+      int b = 6;
+      int c = minFunction(a, b);
+      System.out.println("Minimum Value = " + c);
+   }
+
+   /** returns the minimum of two numbers */
+   public static int minFunction(int n1, int n2) {
+      int min;
+      if (n1 &gt; n2)
+         min = n2;
+      else
+         min = n1;
+
+      return min; 
+   }
+}
+</pre>
+<p>This will produce the following result &minus;</p><p><b>Output</b></p>
+<pre class="result notranslate">
+Minimum value = 6
+</pre>
+<h2>The void Keyword</h2>
+<p>The void keyword allows us to create methods which do not return a value. Here, in the following example we're considering a void method <i>methodRankPoints</i>. This method is a void method, which does not return any value. Call to a void method must be a statement i.e. <i>methodRankPoints(255.7);</i>. It is a Java statement which ends with a semicolon as shown in the following example.</p>
+<p><b>Example</b></p>
+<div class="demo-view">
+<a href="http://tpcg.io/PKJdJQ" target="_blank" class="demo" rel="nofollow"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+public class ExampleVoid {
+
+   public static void main(String[] args) {
+      methodRankPoints(255.7);
+   }
+
+   public static void methodRankPoints(double points) {
+      if (points &gt;= 202.5) {
+         System.out.println("Rank:A1");
+      }else if (points &gt;= 122.4) {
+         System.out.println("Rank:A2");
+      }else {
+         System.out.println("Rank:A3");
+      }
+   }
+}
+</pre>
+<p>This will produce the following result &minus;</p><p><b>Output</b></p>
+<pre class="result notranslate">
+Rank:A1
+</pre>
+<h2>Passing Parameters by Value</h2>
+<p>While working under calling process, arguments is to be passed. These should be in the same order as their respective parameters in the method specification. Parameters can be passed by value or by reference.</p>
+<p>Passing Parameters by Value means calling a method with a parameter. Through this, the argument value is passed to the parameter.</p>
+<p><b>Example</b></p>
+<p>The following program shows an example of passing parameter by value. The values of the arguments remains the same even after the method invocation.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/9o9o66" target="_blank" class="demo" rel="nofollow"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+public class swappingExample {
+
+   public static void main(String[] args) {
+      int a = 30;
+      int b = 45;
+      System.out.println("Before swapping, a = " + a + " and b = " + b);
+
+      // Invoke the swap method
+      swapFunction(a, b);
+      System.out.println("\n**Now, Before and After swapping values will be same here**:");
+      System.out.println("After swapping, a = " + a + " and b is " + b);
+   }
+
+   public static void swapFunction(int a, int b) {
+      System.out.println("Before swapping(Inside), a = " + a + " b = " + b);
+      
+      // Swap n1 with n2
+      int c = a;
+      a = b;
+      b = c;
+      System.out.println("After swapping(Inside), a = " + a + " b = " + b);
+   }
+}
+</pre>
+<p>This will produce the following result &minus;</p><p><b>Output</b></p>
+<pre class="result notranslate">
+Before swapping, a = 30 and b = 45
+Before swapping(Inside), a = 30 b = 45
+After swapping(Inside), a = 45 b = 30
+
+**Now, Before and After swapping values will be same here**:
+After swapping, a = 30 and b is 45
+</pre>
+<h2>Method Overloading</h2>
+<p>When a class has two or more methods by the same name but different parameters, it is known as method overloading. It is different from overriding. In overriding, a method has the same method name, type, number of parameters, etc.</p>
+<p>Let’s consider the example discussed earlier for finding minimum numbers of integer type. If, let’s say we want to find the minimum number of double type. Then the concept of overloading will be introduced to create two or more methods with the same name but different parameters.</p>
+<p>The following example explains the same &minus;</p>
+<p><b>Example</b></p>
+<div class="demo-view">
+<a href="http://tpcg.io/rr3vE1" target="_blank" class="demo" rel="nofollow"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+public class ExampleOverloading {
+
+   public static void main(String[] args) {
+      int a = 11;
+      int b = 6;
+      double c = 7.3;
+      double d = 9.4;
+      int result1 = minFunction(a, b);
+      
+      // same function name with different parameters
+      double result2 = minFunction(c, d);
+      System.out.println("Minimum Value = " + result1);
+      System.out.println("Minimum Value = " + result2);
+   }
+
+   // for integer
+   public static int minFunction(int n1, int n2) {
+      int min;
+      if (n1 &gt; n2)
+         min = n2;
+      else
+         min = n1;
+
+      return min; 
+   }
+   
+   // for double
+   public static double minFunction(double n1, double n2) {
+     double min;
+      if (n1 &gt; n2)
+         min = n2;
+      else
+         min = n1;
+
+      return min; 
+   }
+}
+</pre>
+<p>This will produce the following result &minus;</p><p><b>Output</b></p>
+<pre class="result notranslate">
+Minimum Value = 6
+Minimum Value = 7.3
+</pre>
+<p>Overloading methods makes program readable. Here, two methods are given by the same name but with different parameters. The minimum number from integer and double types is the result.</p>
+<h2>Using Command-Line Arguments</h2>
+<p>Sometimes you will want to pass some information into a program when you run it. This is accomplished by passing command-line arguments to main( ).</p>
+<p>A command-line argument is the information that directly follows the program's name on the command line when it is executed. To access the command-line arguments inside a Java program is quite easy. They are stored as strings in the String array passed to main( ).</p>
+<p><b>Example</b></p>
+<p>The following program displays all of the command-line arguments that it is called with &minus;</p>
+<pre class="prettyprint notranslate">
+public class CommandLine {
+
+   public static void main(String args[]) { 
+      for(int i = 0; i&lt;args.length; i++) {
+         System.out.println("args[" + i + "]: " +  args[i]);
+      }
+   }
+}
+</pre>
+<p>Try executing this program as shown here &minus;</p>
+<pre class="result notranslate">
+$java CommandLine this is a command line 200 -100
+</pre>
+<p>This will produce the following result &minus;</p><p><b>Output</b></p>
+<pre class="result notranslate">
+args[0]: this
+args[1]: is
+args[2]: a
+args[3]: command
+args[4]: line
+args[5]: 200
+args[6]: -100
+</pre>
+<h2>The this keyword</h2>
+<p><b>this</b> is a keyword in Java which is used as a reference to the object of the current class, with in an instance method or a constructor. Using <i>this</i> you can refer the members of a class such as constructors, variables and methods.</p>
+<p><b>Note</b> &minus; The keyword <i>this</i> is used only within instance methods or constructors</p>
+<img src="images/this.jpg" alt="This" />
+<p>In general, the keyword <i>this</i> is used to &minus;</p>
+<ul class="list">
+<li><p>Differentiate the instance variables from local variables if they have same names, within a constructor or a method.</p></li>
+</ul>
+<pre class="prettyprint notranslate">
+class Student {
+   int age;   
+   Student(int age) {
+      this.age = age;	
+   }
+}
+</pre>
+<ul class="list">
+<li><p>Call one type of constructor (parametrized constructor or default) from other in a class. It is known as explicit constructor invocation.</p></li>
+</ul>
+<pre class="prettyprint notranslate">
+class Student {
+   int age
+   Student() {
+      this(20);
+   }
+   
+   Student(int age) {
+      this.age = age;	
+   }
+}
+</pre>
+</ul>
+<p><b>Example</b></p>
+<p>Here is an example that uses <i>this</i> keyword to access the members of a class. Copy and paste the following program in a file with the name, <b>This_Example.java</b>.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/sPyEM5" target="_blank" class="demo" rel="nofollow"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+public class This_Example {
+   // Instance variable num
+   int num = 10;
+	
+   This_Example() {
+      System.out.println("This is an example program on keyword this");	
+   }
+
+   This_Example(int num) {
+      // Invoking the default constructor
+      this();
+      
+      // Assigning the local variable <i>num</i> to the instance variable <i>num</i>
+      this.num = num;	   
+   }
+   
+   public void greet() {
+      System.out.println("Hi Welcome to Tutorialspoint");
+   }
+      
+   public void print() {
+      // Local variable num
+      int num = 20;
+      
+      // Printing the local variable
+      System.out.println("value of local variable num is : "+num);
+      
+      // Printing the instance variable
+      System.out.println("value of instance variable num is : "+this.num);
+      
+      // Invoking the greet method of a class
+      this.greet();     
+   }
+   
+   public static void main(String[] args) {
+      // Instantiating the class
+      This_Example obj1 = new This_Example();
+      
+      // Invoking the print method
+      obj1.print();
+	  
+      // Passing a new value to the num variable through parametrized constructor
+      This_Example obj2 = new This_Example(30);
+      
+      // Invoking the print method again
+      obj2.print(); 
+   }
+}
+</pre>
+<p>This will produce the following result &minus;</p><p><b>Output</b></p>
+<pre class="result notranslate">
+This is an example program on keyword this 
+value of local variable num is : 20
+value of instance variable num is : 10
+Hi Welcome to Tutorialspoint
+This is an example program on keyword this 
+value of local variable num is : 20
+value of instance variable num is : 30
+Hi Welcome to Tutorialspoint
+</pre> 
+<h2>Variable Arguments(var-args)</h2>
+<p>JDK 1.5 enables you to pass a variable number of arguments of the same type to a method. The parameter in the method is declared as follows &minus;</p>
+<pre class="result notranslate">
+typeName... parameterName
+</pre>
+<p>In the method declaration, you specify the type followed by an ellipsis (...). Only one variable-length parameter may be specified in a method, and this parameter must be the last parameter. Any regular parameters must precede it.</p>
+<p><b>Example</b></p>
+<div class="demo-view">
+<a href="http://tpcg.io/08aKHU" target="_blank" class="demo" rel="nofollow"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+public class VarargsDemo {
+
+   public static void main(String args[]) {
+      // Call method with variable args  
+	   printMax(34, 3, 3, 2, 56.5);
+      printMax(new double[]{1, 2, 3});
+   }
+
+   public static void printMax( double... numbers) {
+      if (numbers.length == 0) {
+         System.out.println("No argument passed");
+         return;
+      }
+
+      double result = numbers[0];
+
+      for (int i = 1; i &lt;  numbers.length; i++)
+      if (numbers[i] &gt;  result)
+      result = numbers[i];
+      System.out.println("The max value is " + result);
+   }
+}
+</pre>
+<p>This will produce the following result &minus;</p><p><b>Output</b></p>
+<pre class="result notranslate">
+The max value is 56.5
+The max value is 3.0
+</pre>
+<h2>The finalize( ) Method</h2>
+<p>It is possible to define a method that will be called just before an object's final destruction by the garbage collector. This method is called <b>finalize( )</b>, and it can be used to ensure that an object terminates cleanly.</p>
+<p>For example, you might use finalize( ) to make sure that an open file owned by that object is closed.</p>
+<p>To add a finalizer to a class, you simply define the finalize( ) method. The Java runtime calls that method whenever it is about to recycle an object of that class.</p>
+<p>Inside the finalize( ) method, you will specify those actions that must be performed before an object is destroyed.</p>
+<p>The finalize( ) method has this general form &minus;</p>
+<pre class="result notranslate">
+protected void finalize( ) {
+   // finalization code here
+}
+</pre>
+<p>Here, the keyword protected is a specifier that prevents access to finalize( ) by code defined outside its class.</p>
+<p>This means that you cannot know when or even if finalize( ) will be executed. For example, if your program ends before garbage collection occurs, finalize( ) will not execute.</p>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="java_regular_expressions.html"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="java_files_io.html">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="space-bottom" style="margin-bottom:20px;"></div>
+<div class="google-bottom-ads" id="google-bottom-ads">
+<div>Advertisements</div>
+<div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+</div>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads" id="chapter-menu" style="display: none;">
+<input type="hidden" id="vu" name="vu" value=""/>
+<div class="space-top"></div>
+<div class="mui-panel">
+<ul class="paid-menu" id="div-right-menu">
+<li><a class="hide-on-mobile" href="javascript:printPage();" title="Print this page"><i class="fa fa-print"></i> Print</a></li>
+<li><a href="javascript:void(0)" class="add_notes" title="Add Custom Notes" onclick="add_notes();"><i class="fa fa-edit"></i>&nbsp;Add Notes</a></li>
+<li><a href="javascript:void(0)" class="clsPage text-bookmark" id="text-bookmark" title="Add Bookmark" onclick="text_bookmark()"><i class="fal fa-bookmark"></i>&nbsp;Bookmark this page </a></li>
+<li><a href="javascript:void(0);" id="report_error_popup" onclick="report_error_popup();" title="Report Error"><i class="fal fa-bell"></i>&nbsp;Report Error</a></li>
+<li><a href="javascript:void(0);" id="suggestion_popup" title="Give Suggestions" onclick="suggestion_popup();"><i class="fal fa-badge-check"></i>&nbsp;Suggestions</a></li>
+</ul>
+<div class="profile-my-notes" id="text_notes_div" style="display:none;">
+<textarea rows="10" class="text_notes" id="text_notes" name="text_notes" placeholder="Enter your custom notes..."></textarea>
+<br>
+<a href="javascript:void(0);" id="submit_text_notes" class="butn-save" onclick="submit_text_notes();"> Save</a>
+<a href="javascript:void(0);" class="pop-no butn-cancel" onclick="notesClose();"> Close</a>
+<p class="notes_msg"  ></p>
+</div>
+<div class="bottom-menu">
+<button class="tp-btn"><i class="fal fa-box-up"></i> <a href="https://www.tutorialspoint.com/videotutorials/dashboard.php">Dashboard</a></button>
+<button class="tp-btn"><i class="fal fa-sign-out-alt"></i> <a href="https://www.tutorialspoint.com/videotutorials/userlogout.php">Logout</a></button>
+</div>
+</div>
+</div>
+<div class="mui-col-md-2 google-right-ads" id="google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" style="margin: 0px auto !important;margin-top:5px;min-height:250px!important">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;min-height:250px!important">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;min-height:600px!important">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom" style="margin-bottom:15px;"></div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="https://www.tutorialspoint.com/index.htm" class="logo"><img class="img-responsive" src="../images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="https://www.tutorialspoint.com/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="https://www.tutorialspoint.com/about/return_refund_policy.htm"> <i class="fal fa-asterisk"></i> Refund Policy</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="https://www.tutorialspoint.com/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="https://www.tutorialspoint.com/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2021. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+<script src="../videotutorials/js/text_menu3860.js?v=1"></script>
+<script>
+$(document).ready(function (){
+    var cval = readCookie('subscription_purchased');
+    if(cval == '1'){
+          // logged in and purchased subscription.
+          $('#google-right-ads').remove();
+          $('#adp1').remove();
+          $('#adp2').remove();
+          $('#stickyparent').remove();
+          $('#google-top-ads').remove();
+          $('#adp_top_ads').remove();
+          $('#google-bottom-ads').remove();
+          $('.tutorial-content hr').remove();
+          $('.login').remove();
+          $('#chapter-menu').show();
+          $('.content h1').css("border-bottom", "none");
+          $('.google-right-ads').css("padding-right", "0px");
+          $('.tutorial-content').css("border-radius", "10px");
+          $('#chapter-menu .mui-panel').css("border-radius", "10px");
+     }
+});
+</script>
+</footer>
+</body>
+
+<!-- Mirrored from www.tutorialspoint.com/java/java_methods.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jun 2021 09:40:55 GMT -->
+</html>

@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Voorbeelden/LinkedList Code.md",
-            "mode": "source"
+            "file": "Sorteren/Selection Sort.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Voorbeelden/LinkedList Code.md",
+                "file": "Sorteren/Selection Sort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
   },
   "active": "6cbf45bad2b83292",
   "lastOpenFiles": [
-    "Voorbeelden/Untitled.md",
-    "DataStructuren/Arrays.md",
     "Sorteren/Selection Sort.md",
     "Sorteren/Counting Sort.md",
-    "Tijd en geheugencomplexiteit.md",
-    "DataStructuren/Datastructuren kort op een rijtje.md",
+    "Sorteren/Merge Sort.md",
+    "Sorteren/Tree Sort.md",
+    "Voorbeelden/LinkedList Code.md",
+    "Algemeen.md",
     "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
-    "Voorbeelden/Zoek algoritme voorbeelden.md",
     "Wat komt er op de toets.md",
-    "Algemeen.md"
+    "DataStructuren/Arrays.md",
+    "Voorbeelden/Untitled.md"
   ]
 }
