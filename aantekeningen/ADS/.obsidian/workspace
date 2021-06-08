@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Snelheid van algoritmen.md",
-            "mode": "source"
+            "file": "DataStructuren/Maps.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Snelheid van algoritmen.md",
+                "file": "DataStructuren/Maps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +99,7 @@
   },
   "active": "aa962557fd21dcd9",
   "lastOpenFiles": [
+    "DataStructuren/Maps.md",
     "Snelheid van algoritmen.md",
     "Voorbeelden/Zoek algoritme voorbeelden.md",
     "Algemeen.md",
@@ -107,7 +108,6 @@
     "CompareTo, Equals.md",
     "Generics.md",
     "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
-    "Voorbeelden/Voorbeeld TreeSet.md",
-    "Voorbeelden/Voorbeeld HashSet.md"
+    "Voorbeelden/Voorbeeld TreeSet.md"
   ]
 }
