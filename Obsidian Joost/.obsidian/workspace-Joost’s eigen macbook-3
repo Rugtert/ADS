@@ -1,16 +1,16 @@
 {
   "main": {
-    "id": "53d9d1a3005eb8cd",
+    "id": "108f9ec4ece6d0c4",
     "type": "split",
     "children": [
       {
-        "id": "aa962557fd21dcd9",
+        "id": "ba7b9cfcfba80d9b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DataStructuren/Queues.md",
-            "mode": "preview"
+            "file": "202104201447 - Aftrap Advanced Programming.md",
+            "mode": "source"
           }
         }
       }
@@ -18,15 +18,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ef74fee8eaceacb8",
+    "id": "20fd7c692d1a78d3",
     "type": "split",
     "children": [
       {
-        "id": "ed4613d953f81839",
+        "id": "7806313ec3c8865a",
         "type": "tabs",
         "children": [
           {
-            "id": "8f6c1ff0175588e4",
+            "id": "9b24fd34bcf43597",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "5840ef47f6142284",
+            "id": "2cc616d724cd3ab0",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,38 +55,27 @@
     "width": 300
   },
   "right": {
-    "id": "bdf8f13f05a74b52",
+    "id": "d5e9e5f8ca9e22dd",
     "type": "split",
     "children": [
       {
-        "id": "6dcdeea07bb85c76",
+        "id": "0001f4b79e6f6f07",
         "type": "tabs",
         "children": [
           {
-            "id": "c3bf655e142905c1",
+            "id": "60f9e66f77d2b0d9",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataStructuren/Queues.md",
+                "file": "202104201447 - Aftrap Advanced Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "8db4e85c789aa05f",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "unlinkedCollapsed": false
               }
             }
           }
@@ -94,20 +83,17 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "aa962557fd21dcd9",
+  "active": "ba7b9cfcfba80d9b",
   "lastOpenFiles": [
-    "DataStructuren/Queues.md",
-    "DataStructuren/Maps.md",
-    "Snelheid van algoritmen.md",
-    "Voorbeelden/Zoek algoritme voorbeelden.md",
-    "Algemeen.md",
-    "Tijd en geheugencomplexiteit.md",
-    "Binaire Bomen.md",
-    "CompareTo, Equals.md",
-    "Generics.md",
-    "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md"
+    "202104201447 - Aftrap Advanced Programming.md",
+    "TreeMap.md",
+    "TreeMap-Joost’s eigen macbook.md",
+    "Informatie over les 4 Algoritmen.md",
+    "Algorithmes and datastructuren.md",
+    "SelectionSort.md",
+    "Set.md",
+    "Proeftoets Avans Algoritmen.md"
   ]
 }

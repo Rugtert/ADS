@@ -1,0 +1,1 @@
+slaat de entries op in een gebalanceerde binaire zoekboom, hetgeen de volgorde van de iteratie garandeert.

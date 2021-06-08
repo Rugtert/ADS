@@ -1,0 +1,1 @@
+Sorteren door omwisseling., waarbij naast elkaar staande elementen uit de rij met alkaar worden vergeleken en worden verwisseld als ze niet in de goede volgorde staan. Door dit herhaaldelijk te doen _bubbelt_ het grootste element naar achter in de rij. Na n-1 fasen is de rij uiteindelijk gesorteerd. COmplexiteit hiervan is dan ook O(n<sup>2</sup>).

@@ -1,0 +1,2 @@
+Sorteren door selectie is ook een rechtlijnig algoritme dat als vorgt werkt. Het grootste element in de rij wordt bepaald en achteraan gezet. Vervolgens wordt het tweede-grootste element bepaald en op de voorlaatse plaats gezet. Dit proces wordt herhaald op steeds kortere deelrijen, totdat de deeltij uiteindelijk maar een element meer bevat.
+COmplexiteit hiervan is dan ook O(n<sup>2</sup>). Er zijn echter minder verwisselingen nodig dan bij [[BubbleSort]].

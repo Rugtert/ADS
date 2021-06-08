@@ -1,0 +1,2 @@
+Dit gebruikt recursie om te komen tot een efficient sorteeralgoritme. Daarbij wordt de te sorteren rij opgesplitst in twee deelrijen due gakf zo lang zijn als de oorspronklijke rij. Deze twee deelrijen worden recursief gesorteerd en vervolgens samengevoegd tot een enkele gesorteerde tij. Het samenvoegen van twee gesorteerde rijen wordt ook **merge** genoem, vandaar de naam MergeSort.
+COmplexiteit hiervan is dan ook O(_n_ log _n_).

@@ -1,0 +1,2 @@
+kan worden gebruikt voor het sorteren van een rij waarbij de sleutels, gehele getallen zijn uit het interval [0, _k_], voor een niet te grote waarde van _k_. Om de rij te sorterentelt het algoritme heoveel keer elke waarde voorkomt; uit deze informatie kan de positie van elke sleutel in de gesorteerde rij worden berekend en kan de rij worden gesorteerd.
+Uitvoeringstijd hiervan is dan ook O(_n_), als _k_ = O(_n_).
