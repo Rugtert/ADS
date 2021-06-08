@@ -102,7 +102,7 @@ public class BinaryTree {
             if (number == this.data) 
                 return true;
             else if (number > this.data) {
-                if (right == null) 
+                if (right == null)
                     return false;
                 else
                     return right.contains(number);

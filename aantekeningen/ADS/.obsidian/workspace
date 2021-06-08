@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Wat komt er op de toets.md",
+            "file": "Tijd en geheugencomplexiteit.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Wat komt er op de toets.md",
+                "file": "Tijd en geheugencomplexiteit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +99,7 @@
   },
   "active": "b8cde01d9d0ce474",
   "lastOpenFiles": [
+    "Tijd en geheugencomplexiteit.md",
     "Wat komt er op de toets.md",
     "Binaire Bomen.md",
     "DataStructuren/Sets.md",
@@ -107,7 +108,6 @@
     "Hash.md",
     "CompareTo, Equals.md",
     "Generics.md",
-    "Snelheid van algoritmen.md",
-    "Untitled.md"
+    "Snelheid van algoritmen.md"
   ]
 }
