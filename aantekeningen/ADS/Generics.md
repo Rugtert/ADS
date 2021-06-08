@@ -57,3 +57,5 @@ public class box<T extends SquareThing> {
     public void openthebox() {item.openit();}
 }
 ```
+## Proeftoets
+![[Pasted image 20210608152721.png]]

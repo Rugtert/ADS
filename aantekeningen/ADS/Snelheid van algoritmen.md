@@ -17,3 +17,6 @@ O(2^n): exponentieel: tijd neemt exponentieel toe met de grootte van het problee
 O(n!) : berekenen van permutaties: tijd is evenredig met n faculteit.
 
 ![[Pasted image 20210608151724.png]]
+
+## Proeftoets - Complexiteit
+![[Pasted image 20210608152320.png]]

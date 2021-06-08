@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Snelheid van algoritmen.md",
+            "file": "Binaire Bomen.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Snelheid van algoritmen.md",
+                "file": "Binaire Bomen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
   },
   "active": "aa962557fd21dcd9",
   "lastOpenFiles": [
+    "Binaire Bomen.md",
+    "Generics.md",
+    "Untitled.md",
+    "DataStructuren/Sets.md",
     "Snelheid van algoritmen.md",
+    "DataStructuren/Arrays.md",
+    "Algemeen.md",
     "DataStructuren/Queues.md",
     "Wat komt er op de toets.md",
-    "DataStructuren/Maps.md",
-    "Voorbeelden/Zoek algoritme voorbeelden.md",
-    "Algemeen.md",
-    "Tijd en geheugencomplexiteit.md",
-    "Binaire Bomen.md",
-    "CompareTo, Equals.md",
-    "Generics.md"
+    "DataStructuren/Maps.md"
   ]
 }

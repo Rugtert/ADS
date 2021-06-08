@@ -45,3 +45,5 @@ functie delete(8)
 
 Al deze operaties duren maximaal de diepte van de boom. Bij een gebalanceerde boom is dit O(log n).
 
+## Proeftoets
+![[Pasted image 20210608152800.png]]

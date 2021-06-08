@@ -31,4 +31,5 @@ Wanneer je in een linkedlist met .iterator() werkt kan het zoeken naar een eleme
 ### Arraylist en LinkedList vergeleken
 ![[Pasted image 20210604163339.png]]
 
-
+## Proeftoets - Arrays
+![[Pasted image 20210608152456.png]]
