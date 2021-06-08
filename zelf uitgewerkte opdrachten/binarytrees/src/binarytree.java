@@ -23,6 +23,15 @@ class Tree {
             return root.contains(e);
         }
     }
+
+    public void remove(int e) {
+        if (root == null) {
+            return;
+        }
+        else {
+            root.remove(e);
+        }
+    }
 }
 
 class Node {
@@ -30,6 +39,17 @@ class Node {
     Node right;
     int data;
 
+    public void remove(int e){
+        if (data == e){
+            if (left.data > e){
+                this.data = left.data;
+                left.remove(data);
+            }
+            else if (right.data > e){
+
+            }
+        }
+    }
     public void add(int e) {
         if (e > data) {
             if (right == null) {
