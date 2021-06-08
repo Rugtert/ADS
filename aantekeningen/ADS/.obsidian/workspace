@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "324c4049e944bdc6",
+        "id": "aa962557fd21dcd9",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
+            "file": "Snelheid van algoritmen.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
+                "file": "Snelheid van algoritmen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,17 +97,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "324c4049e944bdc6",
+  "active": "aa962557fd21dcd9",
   "lastOpenFiles": [
-    "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
-    "Tijd en geheugencomplexiteit.md",
-    "Algemeen.md",
+    "Snelheid van algoritmen.md",
     "Voorbeelden/Zoek algoritme voorbeelden.md",
-    "Voorbeelden/Voorbeeld TreeSet.md",
-    "Voorbeelden/Voorbeeld HashSet.md",
-    "Voorbeelden/Sorteervoorbeelden.md",
-    "Voorbeelden/LinkedList Code.md",
+    "Algemeen.md",
+    "Tijd en geheugencomplexiteit.md",
+    "Binaire Bomen.md",
+    "CompareTo, Equals.md",
     "Generics.md",
-    "Binaire Bomen.md"
+    "Voorbeelden/O Voorbeelden van algoritmen per O notatie.md",
+    "Voorbeelden/Voorbeeld TreeSet.md",
+    "Voorbeelden/Voorbeeld HashSet.md"
   ]
 }
